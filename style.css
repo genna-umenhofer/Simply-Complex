@@ -5,49 +5,120 @@
 body {
 display: grid;
 grid-template-columns: 50vw;
-grid-template-rows: 30px 100vh repeat(2, 50vh) 100vh 50vh 100vh 30px;
+grid-template-rows: 60px 100vh repeat(2, auto) 100vh 50vh 100vh 60px;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
-.div1 { grid-area: 2 / 1 / 3 / 2; }
-.div2 { grid-area: 1 / 1 / 2 / 2; }
-.div3 { grid-area: 3 / 1 / 4 / 2; }
-.div4 { grid-area: 4 / 1 / 5 / 2; }
-.div5 { grid-area: 5 / 1 / 6 / 2; }
-.div6 { grid-area: 6 / 1 / 7 / 2; }
-.div7 { grid-area: 7 / 1 / 8 / 2; }
-.div8 { grid-area: 8 / 1 / 9 / 2; }
+.div1 {grid-area: 2 / 1 / 3 / 2; margin: 40px 20px 40px 20px;}
+.div2 { grid-area: 1 / 1 / 2 / 2; margin: 20px 2px 20px 2px;}
+.div3 {grid-area: 3 / 1 / 4 / 2; margin: 20px 20px 20px 20px;}
+.div4 { grid-area: 4 / 1 / 5 / 2; margin: 20px 20px 20px 20px;}
+.div5 { grid-area: 5 / 1 / 6 / 2; margin: 20px 20px 20px 20px;}
+.div6 { grid-area: 6 / 1 / 7 / 2; margin: 20px 20px 20px 20px;}
+.div7 { grid-area: 7 / 1 / 8 / 2; margin: 20px 20px 20px 20px;}
+.div8 { grid-area: 8 / 1 / 9 / 2; margin: 20px 20px 20px 20px;}
 
 *{
-  margin: 0;
   padding: 0;
+}
+
+#storeName {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #shopTitle {
   font-family: 'Elsie Swash Caps', cursive;
+  font-size: 70px;
+}
+
+#shop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: stretch;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px 20px 20px 20px;
+  background: rgb(181,44,42);
+  background: linear-gradient(180deg, rgba(181,44,42,1) 0%, rgba(212,96,46,1) 35%, rgba(193,121,182,1) 100%);
+}
+
+.shopItem {
+  justify-content: center;
+  text-align: center;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 10px 10px 10px;
+  background-color: #B1B1B1;
+  border-radius: 15px;
+  color: #353A70;
+  font-family: 'Flamenco', cursive;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav {
+  font-family: 'Flamenco', cursive;
+  font-size: 50px;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .navBar {
-  font-family: 'Flamenco', cursive;
   text-decoration: none;
+  color: #8B4E6F;
+  padding: 0px 10px 0px 10px;
 }
 
-.navBar a:hover {
-  text-decoration: none;
-  font-weight: bold;
+.navBar:hover {
+  text-decoration: underline;
+  color: #B52C2A;
+}
+
+.navBar:after {
+  color: #8B4E6F;
 }
 
 .sectionTitle {
   font-family: 'Yatra One', cursive;
+  font-size: 50px;
+  text-align: center;
 }
 
 .whoName {
   font-family: 'Sacramento', cursive;
+  font-size: 40px;
+  color: #8B4E6F;
+}
+
+.profile{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /*display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: stretch;
+  text-align: center;*/
+}
+
+.centerIt img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .longText {
   font-family: 'Flamenco', cursive;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .blogTitle {
@@ -55,4 +126,58 @@ grid-row-gap: 0px;
   font-weight: bold;
   font-size: 16px;
   text-decoration: underline;
+}
+
+.blogText {
+  font-family: 'Flamenco', cursive;
+}
+
+.shopItem img {
+  width: auto;
+  height: 150px;
+}
+
+.div1 img {
+  width: 100%
+}
+
+.div4 img {
+  width: auto;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.div6 {
+    background-image: url("/Users/gennaumenhofer/Desktop/Coding Practice/Simply Complex/pictures/llamarama.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.div7 {
+  background-color: #8B4E6F;
+  overflow: auto;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+#llamarama {
+  width: 100vw;
+  height: auto;
+}
+
+input {
+  width: 50vw;
+  margin: 5px auto 5px auto;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-family: 'Flamenco', cursive;
 }
