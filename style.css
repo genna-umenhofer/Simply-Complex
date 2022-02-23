@@ -5,7 +5,7 @@
 body {
 display: grid;
 grid-template-columns: 50vw;
-grid-template-rows: 60px 100vh repeat(2, auto) 100vh 50vh 100vh 60px;
+grid-template-rows: 60px 100vh 25vh 50vh 100vh 50vh 100vh 60px;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
@@ -13,8 +13,8 @@ grid-row-gap: 0px;
 .div1 {grid-area: 2 / 1 / 3 / 2; margin: 40px 20px 40px 20px;}
 .div2 { grid-area: 1 / 1 / 2 / 2; margin: 20px 2px 20px 2px;}
 .div3 {grid-area: 3 / 1 / 4 / 2; margin: 20px 20px 20px 20px;}
-.div4 { grid-area: 4 / 1 / 5 / 2; margin: 20px 20px 20px 20px;}
-.div5 { grid-area: 5 / 1 / 6 / 2; margin: 20px 20px 20px 20px;}
+.div4 { grid-area: 4 / 1 / 5 / 2; margin: 180px 20px 40px 20px;}
+.div5 { grid-area: 5 / 1 / 6 / 2; margin: 20px 50px 20px 50px;}
 .div6 { grid-area: 6 / 1 / 7 / 2; margin: 20px 20px 20px 20px;}
 .div7 { grid-area: 7 / 1 / 8 / 2; margin: 20px 20px 20px 20px;}
 .div8 { grid-area: 8 / 1 / 9 / 2; margin: 20px 20px 20px 20px;}
@@ -59,6 +59,10 @@ grid-row-gap: 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.itemDescription {
+  font-size: 3vh;
+}
+
 nav {
   font-family: 'Flamenco', cursive;
   font-size: 50px;
@@ -83,13 +87,13 @@ nav {
 
 .sectionTitle {
   font-family: 'Yatra One', cursive;
-  font-size: 50px;
+  font-size: 4vw;
   text-align: center;
 }
 
 .whoName {
   font-family: 'Sacramento', cursive;
-  font-size: 40px;
+  font-size: 4vw;
   color: #8B4E6F;
 }
 
@@ -119,37 +123,59 @@ nav {
   font-family: 'Flamenco', cursive;
   margin-left: 10%;
   margin-right: 10%;
+  font-size: 2vw;
 }
 
 .blogTitle {
   font-family: 'Flamenco', cursive;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 3vw;
   text-decoration: underline;
 }
 
 .blogText {
   font-family: 'Flamenco', cursive;
+  font-size: 1.5vw;
 }
 
 .shopItem img {
   width: auto;
   height: 150px;
+  border-radius: 15px;
 }
 
 .div1 img {
-  width: 100%
+  max-height: 100vh;
+  max-width: 75vw;
 }
 
 .div4 img {
   width: auto;
-  height: 200px;
+  height: 38vh;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#quotesAndReviews {
+  display: block;
+  text-align: center;
+  margin: 30px;
+}
+
+#reviewText {
+  font-family: 'Elsie Swash Caps', arial;
+  font-size: 2vw;
+  color: #96B9CB;
+}
+
+#reviewName {
+  font-family: 'Sacramento', cursive;
+  font-size: 2vw;
+  color: #96B9CB;
+}
+
 .div6 {
-    background-image: url("/Users/gennaumenhofer/Desktop/Coding Practice/Simply Complex/pictures/llamarama.jpeg");
+    background-image: url("/Users/gennaumenhofer/Desktop/Coding_Practice/Simply_Complex/pictures/llamarama.jpeg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
@@ -169,6 +195,15 @@ nav {
   height: auto;
 }
 
+#socialMediaLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: stretch;
+  margin: 50px;
+}
+
 input {
   width: 50vw;
   margin: 5px auto 5px auto;
@@ -180,4 +215,6 @@ input {
 footer {
   text-align: center;
   font-family: 'Flamenco', cursive;
+  font-size: 1vw;
+  margin: 1vh;
 }
